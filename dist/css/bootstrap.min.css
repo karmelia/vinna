@@ -6,11 +6,52 @@
 html{
  	font-family:sans-serif;
  	-webkit-text-size-adjust:100%;
- 	-ms-text-size-adjust:100%
+ 	-ms-text-size-adjust:100%;
+ 	background-color: #fff;
  }
 body{
- 		margin:0
+ 		margin:0;
+ 		background-color: #fff;
  	}
+
+.blog-posts ul{
+	list-style: none;
+	text-align: left;
+}
+
+.blog-posts ul li {
+	display: block;
+	margin-bottom: 15%;
+}
+
+.blog-posts ul li a img{
+	margin-right: 1%;
+}
+
+.img-centered{
+	display:block; 
+	margin-left:auto; 
+	margin-right:auto;
+}
+
+.Purple{
+	background-color: purple;
+	color: #fff;
+}
+
+.Purple a{
+	color: #fff;
+}
+
+.White{
+	background-color: white;
+	color: #000;
+}
+
+.White a{
+	color: #000;
+}
+
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{
  		display:block
  	}
