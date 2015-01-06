@@ -28,6 +28,10 @@ body{
 	margin-right: 1%;
 }
 
+.blog-photo{
+	width: 200px;
+}
+
 .img-centered{
 	display:block; 
 	margin-left:auto; 
