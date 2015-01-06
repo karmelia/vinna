@@ -1,16 +1,112 @@
-<h1>All the posts</h1>
-<%= link_to 'New post', new_post_path %>
+<main id="content" role="main" style="background-color: purple;">
+    <img class="banner" src="images/vinna_banner.jpg" alt="vinna banner logo">
+</main>
 
-<table>
-	<tr>
-		<th>Title</th>
-		<th>Text</th>
-	</tr>
+<div class="bs-docs-featurette">
+  <div class="container">
+    <h2 class="bs-docs-featurette-title">Welcome to Vinna! We create badges to commemorate your awesome adventures in parenting.</h2>
+    <p>Perfect for ironing on diaper bags or baby carriers, these patches are a great way to mark your milestones.</p>
 
-	<% @posts.each do |post| %>
-		<tr>
-			<td><%= post.title %></td>
-			<td><%= post.text %></td>
-		</tr>
-	<% end %>
-</table>
+    <hr class="half-rule">
+
+    <div style="width: 100%; display:inline-block; text-overflow: clip;">
+
+      <div id="about" class="col-sm-4">
+        <a href="../about.html"><img src="images/Santos.jpg" class="img-responsive img-centered sm-photos"></a>
+        <h3><a href="/vinna/about.html" target="blank">About Us</a></h3>
+        <p>The word "vinna" means "win." It also means "work." We believe parenthood is winning work! Read more about our philosophy <a href="/about.html">here</a>.</p>
+      </div>
+
+      <div id="shop" class="col-sm-4">
+        <a href="https://www.etsy.com/shop/VinnaShop"><img align="center" src="images/etsy.png" class="img-responsive img-centered sm-photos"></a>
+        <h3><a href="https://www.etsy.com/shop/VinnaShop" target="blank">Shop</a></h3>
+        <p>Visit our <a href="https://www.etsy.com/shop/VinnaShop">Etsy shop</a> for individual merit badges and value packs!</p>
+      </div>
+
+<!--       <div id="blog" class="col-sm-4">
+        <img align="center" src="images/book.jpg" class="img-responsive img-centered sm-badges">
+        <h3><a href="#news">News</a></h3>
+        <p>Articles and stuff and whatever and blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.</p>
+      </div>
+    </div> -->
+  </div>
+</div>
+
+<!-- <hr> -->
+<!-- THIS IS THE BLOG POST SECTION -->
+
+<div class="Purple">
+  <div class="bs-docs-featurette" id="blog">
+    <div class="container">
+    
+      <h2 class="bs-docs-featurette-title">Blog posts</h2>
+      <hr class="half-rule">
+
+      <div class="row bs-docs-featured-sites">
+        <div class="blog-posts">
+        <%= link_to 'Create new post', new_post_path %>
+        <table>
+        	<tr>
+        		<th>Title</th>
+        		<th>Text</th>
+        		<th colspan='2'></th>
+        	</tr>
+
+        	<% @posts.each do |post| %>
+        		<tr>
+        			<td><%= post.title %></td>
+        			<td><%= post.text %></td>
+        			<td><%= link_to 'Show', post_path(post) %></td>
+        			<td><%= link_to 'Edit', edit_post_path(post) %></td>
+        			<td><%= link_to 'Destroy', post_path(post),
+        			              method: :delete,
+        			              data: { confirm: 'Are you sure?' } %></td>
+        		</tr>
+        	<% end %>
+        </table>
+          <!-- <ul>
+            <li><a href="http://instagram.com/p/xe0kc9Kw25/"><img align="left" src="images/dino.jpg" alt="" class="img-responsive blog-photo"><h4>Dino badge coming soon</h4></a><p>In production now - First Science Museum badges! Science is awesome - and not just for kiddos. I still get excited seeing Dino skeletons and learning about space. This badge can commemorate...</p></li>
+
+            <li><a href="http://instagram.com/p/xKrOzvKw7L/"><img align="left" src="images/restaurant.jpg" alt="" class="img-responsive blog-photo"><h4>New in store</h4></a><p>First Restaurant badge! Celebrate that first time you pulled up an extra chair for the car seat, ordered a side of avocado, or succumbed to smashed macaroni on your shirt. Let those other diners stare...</p></li>
+
+            <li><a href="http://instagram.com/p/xR2e-nKwwW/"><img align="left" src="images/sketch.jpg" alt="" class="img-responsive blog-photo"><h4>The creative process</h4></a><p>The initial sketches of our badge designs don't always look too pretty, but they sure yield some cute results.</p></li>
+          </ul> -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- <hr> -->
+<div class='White'>
+  <div class="bs-docs-featurette">
+    <div class="container"> 
+
+      <h2>Stuff goes here (Other blog's posts, articles, press items, etc)</h2>
+      <hr class="half-rule">
+
+      <div class="col-xs-6 col-sm-3">
+        <a href="http://projectmotherhoodnyc.com/holiday-stocking-stuffer-gift-guide-2014-giveaway/" target="new" title="Project Motherhood">
+          <img src="images/pm_gift_guide.jpg" alt="project motherhood" class="img-responsive">Title of article</a>
+      </div>
+
+      <div class="col-xs-6 col-sm-3">
+        <a href="http://projectmotherhoodnyc.com/holiday-stocking-stuffer-gift-guide-2014-giveaway/" target="new" title="Project Motherhood">
+          <img src="images/art.jpg" alt="project motherhood" class="img-responsive">Title of article</a>
+      </div>
+
+      <div class="col-xs-6 col-sm-3">
+        <a href="http://projectmotherhoodnyc.com/holiday-stocking-stuffer-gift-guide-2014-giveaway/" target="new" title="Project Motherhood">
+          <img src="images/beer.jpg" alt="project motherhood" class="img-responsive">Title of article</a>
+      </div>
+
+      <div class="col-xs-6 col-sm-3">
+        <a href="http://projectmotherhoodnyc.com/holiday-stocking-stuffer-gift-guide-2014-giveaway/" target="new" title="Project Motherhood">
+          <img src="images/book.jpg" alt="project motherhood" class="img-responsive">Title of article</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <hr> -->
+
