@@ -88,10 +88,9 @@
  	border-color:#f9f9f9
  }
 .bs-docs-footer{
- 	padding-top:40px;
- 	padding-bottom:40px;
+	margin-top: 1%;
  	text-align:center;
- 	 border-top: 1px solid #ccc;
+ 	border-top: 1px solid #ccc;
  	 
  }
 .bs-docs-footer-links{
@@ -109,8 +108,7 @@
 @media (min-width:768px){
  	.bs-docs-footer p{
  	margin-bottom:0
- }
- }
+ }}
 .bs-docs-social{
  	margin-bottom:20px;
  	text-align:center

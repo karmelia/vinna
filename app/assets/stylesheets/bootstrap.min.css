@@ -61,6 +61,14 @@ body{
 	color: #000;
 }
 
+.about-photos ul li{
+	list-style: none;
+	display: inline;
+	float: left;
+	margin: 1%;
+	border: 3px solid white;
+}
+
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{
  		display:block
  	}
@@ -135,8 +143,9 @@ figure{
 		margin:1em 40px
 	}
 hr{
-		height:0;
-		-webkit-box-sizing:content-box;
+	width: 50%;
+	height:0;
+	-webkit-box-sizing:content-box;
 	-moz-box-sizing:content-box;
 	box-sizing:content-box
 }
@@ -961,8 +970,9 @@ img{
 		border-radius:50%
 	}
 hr{
-		margin-top:20px;
-		margin-bottom:20px;
+	width: 50%;
+	margin-top:20px;
+	margin-bottom:20px;
 	border:0;
 	border-top:1px solid #eee
 }
@@ -1209,8 +1219,8 @@ blockquote p:last-child,blockquote ul:last-child,blockquote ol:last-child{
 		margin-bottom:0
 	}
 blockquote footer,blockquote small,blockquote .small{
-		display:block;
-		font-size:80%;
+	display:block;
+	font-size:80%;
 	line-height:1.42857143;
 	color:#777
 }
@@ -4424,8 +4434,8 @@ a.list-group-item-danger.active,a.list-group-item-danger.active:hover,a.list-gro
 		color:inherit
 	}
 .panel-footer{
-		padding:10px 15px;
-		background-color:#f5f5f5;
+	padding:10px 15px;
+	background-color:#f5f5f5;
 	border-top:1px solid #ddd;
 	border-bottom-right-radius:3px;
 	border-bottom-left-radius:3px
