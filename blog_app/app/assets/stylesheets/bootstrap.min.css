@@ -20,12 +20,14 @@ body{
 }
 
 .blog-posts ul li {
-	display: block;
-	margin-bottom: 15%;
+	border: 1px dotted white;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
-.blog-posts ul li a img{
-	margin-right: 1%;
+.blog-posts ul li img{
+	align: top;
 }
 
 .blog-photo{
