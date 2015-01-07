@@ -12,8 +12,8 @@
     <div style="width: 100%; display:inline-block; text-overflow: clip;">
 
       <div id="about" class="col-sm-4">
-        <a href="../about.html"><%= image_tag("Santos.jpg", :alt => "The Santos Family", :class => "img-responsive img-centered sm-photos") %></a>
-        <h3><a href="/vinna/about.html" target="blank">About Us</a></h3>
+        <a href=""><%= image_tag("Santos.jpg", :alt => "The Santos Family", :class => "img-responsive img-centered sm-photos") %></a>
+        <h3><a href="" target="blank">About Us</a></h3>
         <p>The word "vinna" means "win." It also means "work." We believe parenthood is winning work! Read more about our philosophy <a href="/about.html">here</a>.</p>
       </div>
 
@@ -28,61 +28,8 @@
 
 <!-- THIS IS THE BLOG POST SECTION -->
 
-<div class="Purple">
-  <div class="bs-docs-featurette" id="blog">
-    <div class="container">
-    
-      <h2 class="bs-docs-featurette-title">Blog posts</h2>
-      <hr class="half-rule">
-
-      <div class="row bs-docs-featured-sites">
-        <div class="blog-posts">
-        	<% @posts.each do |post| %>
-        		<ul>
-        			<li><%= link_to (image_tag("200placeholder.gif", :alt => "placeholder")), post_path(post) %> <strong><%= link_to (post.title), post_path(post) %>:</strong> <%= post.text %></li>
-        		</ul>
-        	<% end %>
-          <!-- <ul>
-            <li><a href="http://instagram.com/p/xe0kc9Kw25/"><img align="left" src="dino.jpg" alt="" class="img-responsive blog-photo"><h4>Dino badge coming soon</h4></a><p>In production now - First Science Museum badges! Science is awesome - and not just for kiddos. I still get excited seeing Dino skeletons and learning about space. This badge can commemorate...</p></li>
-
-            <li><a href="http://instagram.com/p/xKrOzvKw7L/"><img align="left" src="restaurant.jpg" alt="" class="img-responsive blog-photo"><h4>New in store</h4></a><p>First Restaurant badge! Celebrate that first time you pulled up an extra chair for the car seat, ordered a side of avocado, or succumbed to smashed macaroni on your shirt. Let those other diners stare...</p></li>
-
-            <li><a href="http://instagram.com/p/xR2e-nKwwW/"><img align="left" src="sketch.jpg" alt="" class="img-responsive blog-photo"><h4>The creative process</h4></a><p>The initial sketches of our badge designs don't always look too pretty, but they sure yield some cute results.</p></li>
-          </ul> -->
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
+<%#= render 'blog' %>
 
 <!-- THIS IS THE PLACE TO POST EXTERNAL ARTICLES, PRESS, ETC -->
-<div class='White'>
-  <div class="bs-docs-featurette">
-    <div class="container"> 
 
-      <h2>Stuff goes here (Other blog's posts, articles, press items, etc)</h2>
-      <hr class="half-rule">
-
-      <div class="col-xs-6 col-sm-3">
-        <a href="http://projectmotherhoodnyc.com/holiday-stocking-stuffer-gift-guide-2014-giveaway/" target="new" title="Project Motherhood">
-          <%= image_tag("pm_gift_guide.jpg", :alt => "project motherhood", :class => "img-responsive") %> Title of article</a>
-      </div>
-
-      <div class="col-xs-6 col-sm-3">
-        <a href="http://projectmotherhoodnyc.com/holiday-stocking-stuffer-gift-guide-2014-giveaway/" target="new" title="Project Motherhood">
-          <%= image_tag("art.jpg", :alt => "art museum badge", :class => "img-responsive") %> Title of article</a>
-      </div>
-
-      <div class="col-xs-6 col-sm-3">
-        <a href="http://projectmotherhoodnyc.com/holiday-stocking-stuffer-gift-guide-2014-giveaway/" target="new" title="Project Motherhood">
-          <%= image_tag("beer.jpg", :alt => "happy hour badge", :class => "img-responsive") %> Title of article</a>
-      </div>
-
-      <div class="col-xs-6 col-sm-3">
-        <a href="http://projectmotherhoodnyc.com/holiday-stocking-stuffer-gift-guide-2014-giveaway/" target="new" title="Project Motherhood">
-          <%= image_tag("book.jpg", :alt => "book badge", :class => "img-responsive") %> Title of article</a>
-      </div>
-    </div>
-  </div>
-</div>
+<%#= render 'article' %>
