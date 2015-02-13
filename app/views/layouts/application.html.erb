@@ -36,20 +36,20 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-      <a href="../" class="navbar-brand">Vinna</a>
+    <a href="../" class="navbar-brand">Home</a>
     </div>
     <nav class="collapse navbar-collapse bs-navbar-collapse">
       <ul class="nav navbar-nav">
-        <li>
-          <a href="/about">About</a>
-        </li>
-        <li>
-          <a href="https://www.etsy.com/shop/VinnaLife">Shop</a>
-        </li>
-<!--         <li>
-          <a href="#blog">Blog</a>
-        </li> -->
+      <% if user_signed_in? %>
+        <li class="like_link">Welcome <%= current_user.email %></li>
+        <li><%= link_to 'Edit Profile', edit_user_registration_path %></li>
+        <li><%= link_to 'Log Out', destroy_user_session_path, :method => :delete %></li>
+      <% else %>
+        <li><%= link_to 'Sign Up', new_user_registration_path %></li>
+        <li><%= link_to 'Log In', new_user_session_path %></li>
+      <% end %>
       </ul>
+
       <ul class="nav navbar-nav navbar-right">
         <li><a href="mailto:vinnabadges@gmail.com?Subject=Vinna%20website" target="blank">Contact Us</a></li>
         <li><a href="https://www.facebook.com/VinnaLife" target="blank">Facebook</a></li>
