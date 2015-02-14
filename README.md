@@ -7,3 +7,10 @@ Vinna
 * Ability for Anna to share stories from other blogs (articles) http://guides.rubyonrails.org/getting_started.html - #6. Adding a second model
 * Comments? Do we want comments? 
 * Tags? Search bar? 
+
+Links to tutorials:
+
+https://rubyonrailshelp.wordpress.com/2014/01/13/allow-users-and-admin-to-sign-in-with-username-or-email/
+
+Anna sign up here: 
+/admins/sign_up

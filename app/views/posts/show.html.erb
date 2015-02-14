@@ -1,13 +1,14 @@
 <div class="Purple">
 	<div class="bs-docs-featurette">
-	
-		<%= image_tag("200placeholder.gif", :alt => "placeholder") %>
+
 		<h1><%= @post.title %></h1>
 
 		<p><%= @post.text %></p>
 
-		<%= link_to 'Home', posts_path %> | <%= link_to 'Edit', edit_post_path(@post) %> | <%= link_to 'Delete', post_path(@post),
+		<% if admin_signed_in? %>
+			<%= link_to 'Home', posts_path %> | <%= link_to 'Edit', edit_post_path(@post) %> | <%= link_to 'Delete', post_path(@post),
         			              method: :delete,
         			              data: { confirm: 'Are you sure?' } %></li>
+  	<% end %>
 	</div>	
 </div>

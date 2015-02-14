@@ -4,21 +4,17 @@
     
       <h2 class="bs-docs-featurette-title">Blog posts</h2>
       <hr class="half-rule">
+      <% if admin_signed_in? %>
+        <%= link_to "Add blog post", new_post_path %>
+      <% end %>
 
       <div class="row bs-docs-featured-sites">
         <div class="blog-posts">
         	<% @posts.each do |post| %>
         		<ul>
-        			<li><%= link_to (image_tag("200placeholder.gif", :alt => "placeholder")), post_path(post) %> <strong><%= link_to (post.title), post_path(post) %>:</strong> <%= post.text %></li>
+        			<li><strong><%= link_to (post.title), post_path(post) %>:</strong><br> <%= post.text %></li>
         		</ul>
         	<% end %>
-          <ul>
-            <li><a href="http://instagram.com/p/xe0kc9Kw25/"><img align="left" src="dino.jpg" alt="" class="img-responsive blog-photo"><h4>Dino badge coming soon</h4></a><p>In production now - First Science Museum badges! Science is awesome - and not just for kiddos. I still get excited seeing Dino skeletons and learning about space. This badge can commemorate...</p></li>
-
-            <li><a href="http://instagram.com/p/xKrOzvKw7L/"><img align="left" src="restaurant.jpg" alt="" class="img-responsive blog-photo"><h4>New in store</h4></a><p>First Restaurant badge! Celebrate that first time you pulled up an extra chair for the car seat, ordered a side of avocado, or succumbed to smashed macaroni on your shirt. Let those other diners stare...</p></li>
-
-            <li><a href="http://instagram.com/p/xR2e-nKwwW/"><img align="left" src="sketch.jpg" alt="" class="img-responsive blog-photo"><h4>The creative process</h4></a><p>The initial sketches of our badge designs don't always look too pretty, but they sure yield some cute results.</p></li>
-          </ul>
         </div>
       </div>
 
