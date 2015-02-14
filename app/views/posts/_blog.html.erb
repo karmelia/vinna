@@ -8,16 +8,15 @@
         <%= link_to "Add blog post", new_post_path %>
       <% end %>
 
-      <div class="row bs-docs-featured-sites">
-        <div class="blog-posts">
-        	<% @posts.each do |post| %>
-        		<ul>
-        			<li><strong><%= link_to (post.title), post_path(post) %>:</strong><br> <%= post.text %></li>
-        		</ul>
-        	<% end %>
+        <div class="row bs-docs-featured-sites">
+          <div class="blog-posts">
+            	<% @posts.each do |post| %>
+            		<ul>
+            			<li><em><strong><%= link_to (post.title), post_path(post) %>:</strong></em><br> <%= post.text %></li>
+            		</ul>
+            	<% end %>
+          </div>
         </div>
-      </div>
-
     </div>
   </div>
 </div>
