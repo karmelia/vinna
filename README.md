@@ -11,3 +11,6 @@ Vinna
 Links to tutorials:
 
 https://rubyonrailshelp.wordpress.com/2014/01/13/allow-users-and-admin-to-sign-in-with-username-or-email/
+
+Anna sign up here: 
+/admins/sign_up

@@ -15,6 +15,7 @@ class UserController < ApplicationController
   		flash[:notice] = "Successfully created User."
   		redirect_to root_path
   	else
+      flash[:message]
   		render :action => 'new'
   	end
   end

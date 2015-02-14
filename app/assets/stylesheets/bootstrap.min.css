@@ -20,7 +20,6 @@ body{
 }
 
 .blog-posts ul li {
-	border: 1px dotted white;
 	width: 100%;
 	overflow: hidden;
 	text-overflow: ellipsis;

@@ -38,15 +38,20 @@
     </button>
     <a href="../" class="navbar-brand">Home</a>
     </div>
-    <nav class="collapse navbar-collapse bs-navbar-collapse">
+    <nav class="collapse navbar-collapse bs-navbar-collapse"> <!-- TO DO: Only display one of these depending on the user role! -->
       <ul class="nav navbar-nav">
-      <% if user_signed_in? %>
-        <li class="like_link">Welcome <%= current_user.email %></li>
-        <li><%= link_to 'Edit Profile', edit_user_registration_path %></li>
-        <li><%= link_to 'Log Out', destroy_user_session_path, :method => :delete %></li>
-      <% else %>
-        <li><%= link_to 'Sign Up', new_user_registration_path %></li>
-        <li><%= link_to 'Log In', new_user_session_path %></li>
+      <!-- <%# if user_signed_in? %>
+        <li class="like_link">Welcome <%#= current_user.username %></li>
+        <li><%#= link_to 'Settings', edit_user_registration_path %></li>
+        <li><%#= link_to 'Log Out', destroy_user_session_path, :method => :delete %></li>
+      <%# else %>
+        <li><%#= link_to 'Sign Up', new_user_registration_path %></li>
+        <li><%#= link_to 'Log In', new_user_session_path %></li>
+      <%# end %>  -->
+
+      <% if admin_signed_in? %>
+        <li><%= link_to current_admin.username, edit_admin_registration_path %></li>
+        <li><%= link_to 'Log Out', destroy_admin_session_path, :method => :delete %></li>
       <% end %>
       </ul>
 

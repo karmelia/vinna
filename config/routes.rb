@@ -8,9 +8,6 @@ Rails.application.routes.draw do
 
   resources :posts
 
-  match '/contacts', to: 'contacts#new', via: 'get'
-  resources "contacts", only: [:new, :create]
-
   #              Prefix Verb         URI Pattern                     Controller#Action
   #         new_admin_session GET    /admins/sign_in(.:format)       devise/sessions#new
   #             admin_session POST   /admins/sign_in(.:format)       devise/sessions#create
