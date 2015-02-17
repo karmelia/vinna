@@ -11,6 +11,7 @@ gem 'devise'
 
 gem 'mail_form'
 gem 'simple_form'
+gem "rails_12factor"
 
 # Use SCSS for stylesheets
 # gem 'sass-rails', '~> 5.0'
