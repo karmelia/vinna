@@ -1,5 +1,5 @@
 class AdminController < ApplicationController
-  load_and_authorize_resource
+  # load_and_authorize_resource
 
   def index
   	@admins = Admin.excludes(:id => current_admin.id)
