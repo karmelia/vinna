@@ -68,6 +68,12 @@ body{
 	border: 3px solid white;
 }
 
+.about-container{
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0 20%;
+}
+
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{
  		display:block
  	}
@@ -1296,8 +1302,8 @@ pre code{
 		overflow-y:scroll
 	}
 .container{
-			padding-right:15px;
-		padding-left:15px;
+	padding-right:15px;
+	padding-left:15px;
 	margin-right:auto;
 	margin-left:auto
 }
