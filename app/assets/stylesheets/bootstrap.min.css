@@ -21,8 +21,10 @@ body{
 
 .blog-posts ul li {
 	width: 100%;
+	padding: 30px 10px;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	border-bottom: 1px solid white;
 }
 
 /*.blog-posts ul li img{
@@ -72,6 +74,11 @@ body{
 	margin-right: auto;
 	margin-left: auto;
 	padding: 0 20%;
+}
+
+.charity-images img{
+	width: 500px;
+	border: 3px solid purple;
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{
