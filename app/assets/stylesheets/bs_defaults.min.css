@@ -89,13 +89,15 @@
  }
 .bs-docs-footer{
 	margin-top: 1%;
+	margin-bottom: 1%;
  	text-align:center;
  	border-top: 1px solid #ccc;
+ 	color: black;
+ 	background-color: white;
  	 
  }
 .bs-docs-footer-links{
  	padding-left:0;
- 	margin-top:20px;
  	color:#999
  }
 .bs-docs-footer-links li{
@@ -106,7 +108,7 @@
  	padding-left:0
  	}
 @media (min-width:768px){
- 	.bs-docs-footer p{
+ .bs-docs-footer p{
  	margin-bottom:0
  }}
 .bs-docs-social{
