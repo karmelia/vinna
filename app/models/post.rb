@@ -3,5 +3,5 @@ class Post < ActiveRecord::Base
 										length: { minimum: 2 }
 
 	validates :text, presence: true,
-										length: { minimum: 5 }
+										length: { minimum: 2 }
 end

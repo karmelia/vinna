@@ -12,6 +12,11 @@ gem 'devise'
 gem 'mail_form'
 gem 'simple_form'
 gem "rails_12factor"
+gem 'rspec-rails', '~> 3.0.0'
+gem 'factory_girl_rails'
+gem 'capybara'
+gem 'database_cleaner'
+gem 'faker'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'

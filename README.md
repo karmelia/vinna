@@ -23,3 +23,5 @@ Pundit - http://through-voidness.blogspot.com/2013/10/advanced-rails-4-authoriza
 			- Rolify? https://github.com/RolifyCommunity/rolify
 CanCanCan - https://github.com/CanCanCommunity/cancancan
 					- http://stackoverflow.com/questions/27357087/how-use-cancancan-gem
+
+TESTING: http://www.webascender.com/Blog/ID/566/Testing-Rails-4-Apps-With-RSpec-3-Part-I#.VPYRTbPF8Rk
