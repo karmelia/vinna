@@ -17,11 +17,5 @@ TODO: Assign roles before allowing comments (two sets of Sign Up Log In buttons 
 
 Tutorials:
 
-Pundit - http://through-voidness.blogspot.com/2013/10/advanced-rails-4-authorization-with.html
-			- http://www.ruby-on-rails-outsourcing.com/articles/2012/11/23/getting-started-with-pundit/
-			-https://github.com/elabs/pundit
-			- Rolify? https://github.com/RolifyCommunity/rolify
-CanCanCan - https://github.com/CanCanCommunity/cancancan
-					- http://stackoverflow.com/questions/27357087/how-use-cancancan-gem
+Minitest for Rails4 (model tests): http://blowmage.com/2013/07/08/minitest-spec-rails4
 
-TESTING: http://www.webascender.com/Blog/ID/566/Testing-Rails-4-Apps-With-RSpec-3-Part-I#.VPYRTbPF8Rk

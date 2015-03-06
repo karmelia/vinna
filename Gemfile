@@ -1,8 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.0.0'
 
-gem "paperclip", "~> 4.1.1"
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem "paperclip"
 gem 'rails', '4.2.0'
 
 gem 'pg'
@@ -12,11 +11,10 @@ gem 'devise'
 gem 'mail_form'
 gem 'simple_form'
 gem "rails_12factor"
-gem 'rspec-rails', '~> 3.0.0'
-gem 'factory_girl_rails'
 gem 'capybara'
 gem 'database_cleaner'
 gem 'faker'
+gem "minitest-rails"
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -54,5 +52,8 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  gem "minitest-rails-capybara"
+  gem 'selenium-webdriver'
 end
 
