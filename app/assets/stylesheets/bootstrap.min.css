@@ -15,7 +15,13 @@ body{
  		background-color: #fff;
  		width: 100%;
  	}
-
+.login_button{
+	margin-right: 15px;
+	padding: 8px 5px;
+	color: purple;
+	background-color: lightgray;
+	border-radius: 1000px;
+}
 .blog-posts ul{
 	list-style: none;
 	text-align: left;

@@ -18,5 +18,4 @@ class PostsControllerTest < ActionController::TestCase
     end
     assert_redirected_to post_path(assigns(:post))
   end
-
 end

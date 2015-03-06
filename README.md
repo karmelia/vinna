@@ -18,4 +18,5 @@ TODO: Assign roles before allowing comments (two sets of Sign Up Log In buttons 
 Tutorials:
 
 Minitest for Rails4 (model tests): http://blowmage.com/2013/07/08/minitest-spec-rails4
-
+SpeakerDeck: https://speakerdeck.com/blowmage/minitest-and-rails-total-bffs
+RailsCast: http://railscasts.com/episodes/327-minitest-with-rails?view=comments
