@@ -53,7 +53,7 @@
         <li id="admin-log-out"><%= link_to 'Admin Log Out', destroy_admin_session_path, :method => :delete %></li>
         <li><%= link_to "Add a new blog post", new_post_path %></li>
       <% else %>
-        <li><%= link_to 'Admin Sign Up', new_admin_registration_path %></li>
+        <li><%#= link_to 'Admin Sign Up', new_admin_registration_path %></li>
         <li><%= link_to 'Admin Log In', new_admin_session_path %></li>
       <% end %>
       </ul>
