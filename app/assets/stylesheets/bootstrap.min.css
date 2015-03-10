@@ -15,6 +15,11 @@ body{
  		background-color: #fff;
  		width: 100%;
  	}
+
+.purple_border {
+ 	border-top: 4px solid purple;
+ }
+
 .login_button{
 	margin-right: 15px;
 	padding: 8px 5px;
