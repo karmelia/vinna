@@ -6,6 +6,10 @@ Rails.application.routes.draw do
   resources :posts
   resources :users
 
+  get '/log-in' => 'sessions#new'
+  post '/log-in' => 'sessions#create'
+  get '/log-out' => 'sessions#destroy', as: :log_out
+
   #              Prefix Verb         URI Pattern                     Controller#Action
   #         new_admin_session GET    /admins/sign_in(.:format)       devise/sessions#new
   #             admin_session POST   /admins/sign_in(.:format)       devise/sessions#create

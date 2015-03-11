@@ -8,15 +8,4 @@ Vinna
 * Comments? Do we want comments? 
 * Tags? Search bar? 
 
-Anna sign up here: 
-/admins/sign_up
-
-TODO: Fix blog preview view on index page (no hidden overflow right now)
-TODO: Assign roles before allowing comments (two sets of Sign Up Log In buttons on top navbar)
-		- Am I going to use Pundit or CanCanCan? 
-
-Tutorials:
-
-Minitest for Rails4 (model tests): http://blowmage.com/2013/07/08/minitest-spec-rails4
-SpeakerDeck: https://speakerdeck.com/blowmage/minitest-and-rails-total-bffs
-RailsCast: http://railscasts.com/episodes/327-minitest-with-rails?view=comments
+Bcrypt in Rails4: http://nycda.com/blog/basic-user-authentication-model-in-rails-4/
