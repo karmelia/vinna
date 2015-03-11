@@ -6,10 +6,6 @@ gem 'rails', '4.2.0'
 
 gem 'pg'
 
-gem 'devise'
-
-gem 'mail_form'
-gem 'simple_form'
 gem "rails_12factor"
 gem 'capybara'
 gem 'database_cleaner'
