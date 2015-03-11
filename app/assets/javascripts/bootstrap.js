@@ -4,26 +4,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
- $(document).ready(function(){
-  $('ul#user_nav li').hide();
-    $('ul#user_nav h5').mouseenter(function(){
-      $('ul#user_nav li').show(500)
-    });
-    $('ul#user_nav').mouseleave(function(){
-      $('ul#user_nav li').hide(500)
-    });
- });
-
- $(document).ready(function(){
-  $('ul#admin_nav li').hide();
-    $('ul#admin_nav h5').mouseenter(function(){
-      $('ul#admin_nav li').show(500)
-    });
-    $('ul#admin_nav').mouseleave(function(){
-      $('ul#admin_nav li').hide(500)
-    });
- });
-
 if (typeof jQuery === 'undefined') {
   throw new Error('Bootstrap\'s JavaScript requires jQuery')
 }
