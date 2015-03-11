@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
 	def create
 		@user = User.authenticate(params[:email], params[:password])
 		if @user
-			flash[:notice] = "You are logged in."
+			flash[:notice] = "You are logged in"
 			session[:user_id] = @user.id
 			redirect_to root_path
 		else
