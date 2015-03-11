@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'about', to: 'about#index'
 
   resources :posts
+  resources :users
 
   #              Prefix Verb         URI Pattern                     Controller#Action
   #         new_admin_session GET    /admins/sign_in(.:format)       devise/sessions#new
