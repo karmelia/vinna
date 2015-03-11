@@ -6,8 +6,12 @@ class UserTest < ActiveSupport::TestCase
     @user ||= User.new
   end
 
-  def test_valid
-    assert user.valid?
-  end
-
+  test "should not save user without email or password" do 
+  	user = User.new
+  	assert_not user.save
+  	user.email = "test@test.com"
+  	assert_not user.save
+  	user.password = "password"
+ 		assert user.save
+ 	end
 end

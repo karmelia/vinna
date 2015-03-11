@@ -27,8 +27,4 @@ class ActiveSupport::TestCase
   register_spec_type self do |desc|
   	desc < ActiveRecord::Base if desc.is_a? Class 
   end
-  
-  class ActionController::TestCase
-    include Devise::TestHelpers
-  end
 end
