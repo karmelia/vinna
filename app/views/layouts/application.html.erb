@@ -41,6 +41,12 @@
     <% if !current_user.nil? %>
         <li><%= link_to "Hello, #{current_user.email}", edit_user_path(current_user.id) %></li>
         <li><%= link_to 'Log Out', log_out_path %></li>
+        <% User.assign_admins %>
+        <% if current_user.admin? %>
+          <h3>Welcome Admin!</h3>
+        <% elsif current_user.general?%>
+          <h3>Welcome User!</h3>
+        <% end %>
       <% else %>
         <li><%= link_to 'Sign Up', new_user_path %></li>
         <li><%= link_to 'Log In', log_in_path %></li>

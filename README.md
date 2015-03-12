@@ -8,4 +8,6 @@ Vinna
 * Comments? Do we want comments? 
 * Tags? Search bar? 
 
-Bcrypt in Rails4: http://nycda.com/blog/basic-user-authentication-model-in-rails-4/
+User roles: https://gustavocguimaraes.wordpress.com/2014/12/17/role-based-authorization-with-rails-4-enum/
+
+Problem assigning access_levels in the console and having it carry into the app.
