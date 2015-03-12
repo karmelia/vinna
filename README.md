@@ -15,3 +15,7 @@ user.password = 'Test1234'
 user.password_confirmation = 'Test1234'
 user.access_level = 'admin'
 user.save #=> true
+
+Current image message: 
+
+http://localhost:3000/system/posts/images/000/000/002/original/%23%3CActionDispatch::Http::UploadedFile:0x007fa4a2440d88%3E
