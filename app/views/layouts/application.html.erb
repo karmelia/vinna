@@ -38,13 +38,14 @@
     
     <nav class="collapse navbar-collapse bs-navbar-collapse">
     <ul class="nav navbar-nav" id="user_nav">
-    <% if logged_in? %>
-        <li><%= link_to "Hello, #{current_user.email}", edit_user_path(current_user.id) %></li>
-        <li><%= link_to 'Log Out', log_out_path, method: :delete %></li>
-      <% else %>
+    <%# if logged_in? %>
+        <li><a href="#">Hello, <%= current_user.email %></a></li>
+        <li><%#= link_to "Hello, #{current_user}", edit_user_path(params[:id]) %></li>
+        <li><%= link_to 'Log Out', log_out_path %></li>
+      <%# else %>
         <li><%= link_to 'Sign Up', new_user_path %></li>
         <li><%= link_to 'Log In', log_in_path %></li>
-      <% end %>
+      <%# end %>
     </ul>
 
     <ul class="nav navbar-nav navbar-right">
