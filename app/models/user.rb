@@ -22,10 +22,5 @@ class User < ActiveRecord::Base
 			nil
 		end
 	end
-
-	def self.assign_admins
-		erin = User.find_by_email("erin@erin.com")
-		erin.access_level = :admin
-	end
-   
+ 
 end
