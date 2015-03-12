@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
 	attr_accessor :password
+  enum access_level: [:general, :admin, :super_admin]
 
 	validates :email, presence: true
 	validates :email, uniqueness: true
@@ -21,4 +22,5 @@ class User < ActiveRecord::Base
 			nil
 		end
 	end
+ 
 end
