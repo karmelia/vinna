@@ -6,7 +6,8 @@
         <div class="blog-posts">
           	<% @posts.each do |post| %>
           		<ul>
-          			<li><em><strong><%= link_to (post.title), post_path(post) %>:</strong></em><br> <%= post.text %></li>
+          			<li><em><strong><%= link_to (post.title), post_path(post) %>:</strong></em><br>
+                 <%= post.text %></li>
           		</ul>
           	<% end %>
         </div>
