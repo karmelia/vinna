@@ -8,6 +8,8 @@ gem 'pg'
 
 gem 'bcrypt-ruby', '~> 3.1.5', require: 'bcrypt'
 
+gem "paperclip"
+
 gem "rails_12factor"
 gem 'capybara'
 gem 'database_cleaner'
