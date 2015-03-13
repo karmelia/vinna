@@ -16,5 +16,3 @@ user.password_confirmation = 'Test1234'
 user.access_level = 'admin'
 user.save #=> true
 
-Adding comments (polymorphic associations: http://railscasts.com/episodes/154-polymorphic-association?view=comments)
-
