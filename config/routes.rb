@@ -3,7 +3,10 @@ Rails.application.routes.draw do
 
   get 'about', to: 'about#index'
 
-  resources :posts
+  resources :posts do 
+    resources :comments #only: [:index, :new, :created]
+  end
+  #resources :comments, only: [:show, :edit, :update, :destroy]
   resources :users
 
   get '/log-in' => 'sessions#new'

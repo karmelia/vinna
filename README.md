@@ -16,8 +16,5 @@ user.password_confirmation = 'Test1234'
 user.access_level = 'admin'
 user.save #=> true
 
-Current image message: 
+Adding comments (polymorphic associations: http://railscasts.com/episodes/154-polymorphic-association?view=comments)
 
-http://localhost:3000/system/posts/images/000/000/002/original/%23%3CActionDispatch::Http::UploadedFile:0x007fa4a2440d88%3E
-
-TO DO: watch this railscast on paperclip and troubleshoot issue: http://railscasts.com/episodes/134-paperclip 
