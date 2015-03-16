@@ -12,11 +12,13 @@ describe PostsController do
 	it { should route(:delete, '/posts/1').to(action: :destroy, id: 1) }
 
 	# Testing Controller methods
+
 	describe "GET #index" do 
 		before { get :index }
 
 		it { should render_template(:index) }
 		it { should respond_with(200) }
+
 	end
 	describe "POST #create" do 
 		it "creates a new post" do 
@@ -43,25 +45,16 @@ describe PostsController do
 	end
 
 	describe "PUT #update" do 
-
-		let(:attr) do 
-		   { :title => 'new title', :text => 'new content' }
-		 end
-
-		before(:each) do
-			post :create, post: FactoryGirl.attributes_for(:post)
-		  put :update, :id => post.id, :post => attr
-		  post.reload
+		it "should redirect to show page with valid attributes" do 
+		  # response.should redirect_to(edit_post_path(post))
 		end
 
-		it { response.should redirect_to (post_path(assigns[:post])) }
-		it { post.title.should eql attr[:title] }
-		it { post.content.should eql attr[:content] }
-
 		it "should render edit page with invalid attributes" do 
+			# response.should render_template("edit")
 		end
 	end
 	describe "DELETE #destroy" do 
-		
+		before { delete :destroy }
+
 	end
 end
