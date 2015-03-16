@@ -4,9 +4,8 @@ Rails.application.routes.draw do
   get 'about', to: 'about#index'
 
   resources :posts do 
-    resources :comments #only: [:index, :new, :created]
+    resources :comments
   end
-  #resources :comments, only: [:show, :edit, :update, :destroy]
   resources :users
 
   get '/log-in' => 'sessions#new'

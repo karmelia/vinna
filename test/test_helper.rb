@@ -4,6 +4,7 @@ require "rails/test_help"
 require "minitest/rails"
 require "minitest/spec"
 require "minitest/rails/capybara"
+require "paperclip/matchers"
 
 # To add Capybara feature tests add `gem "minitest-rails-capybara"`
 # to the test group in the Gemfile and uncomment the following:
@@ -22,6 +23,8 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+  extend Paperclip::Shoulda::Matchers
+  
   extend MiniTest::Spec::DSL
 
   register_spec_type self do |desc|

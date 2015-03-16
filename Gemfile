@@ -12,7 +12,7 @@ gem "rails_12factor"
 gem 'capybara'
 gem 'database_cleaner'
 gem 'faker'
-gem "minitest-rails"
+gem 'rspec-rails'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -53,5 +53,7 @@ group :development, :test do
 
   gem "minitest-rails-capybara"
   gem 'selenium-webdriver'
+
+  gem 'shoulda-matchers'
 end
 
