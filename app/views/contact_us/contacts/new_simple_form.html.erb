@@ -1,0 +1,12 @@
+<div class="user_log_in">
+	<h2><%= t('.contact_us') %></h2>
+	<ul>
+		<%= simple_form_for @contact, :url => contacts_path do |f| %>
+		  <li><%= f.input :name, :label => t('.name') if ContactUs.require_name %></li>
+		  <li><%= f.input :email, :label => t('.email') %></li>
+		  <li><%= f.input :subject, :label => t('.subject') if ContactUs.require_subject %></li>
+		  <li><%= f.input :message, :as => :text, :label => t('.message') %></li>
+		  <li><%= f.button :submit, :value => t('.submit'), :alt => t('.submit'), :id => 'contact_us_contact_submit', :title => t('.submit') %></li>
+		<% end %>
+	</ul>
+</div>
