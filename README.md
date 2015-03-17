@@ -16,3 +16,6 @@ user.password_confirmation = 'Test1234'
 user.access_level = 'admin'
 user.save #=> true
 
+Mail form: https://github.com/plataformatec/mail_form
+Contact us: https://github.com/JDutil/contact_us
+Rails contact form: http://everydayrails.com/2011/09/07/rails-contact-form.html
