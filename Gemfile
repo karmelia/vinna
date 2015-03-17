@@ -14,6 +14,9 @@ gem 'database_cleaner'
 gem 'faker'
 gem "minitest-rails"
 
+gem 'contact_us', '~> 0.5.1'
+gem 'simple_form'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
