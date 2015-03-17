@@ -16,28 +16,21 @@ body{
  		width: 100%;
  	}
 
-.purple_border {
- 	border-top: 4px solid purple;
- }
 
-.login_button{
-	margin-right: 15px;
-	padding: 8px 5px;
-	color: purple;
-	background-color: lightgray;
-	border-radius: 1000px;
-}
 .blog-posts ul{
 	list-style: none;
 	text-align: left;
 }
 
 .blog-posts ul li {
-	width: 100%;
+	width: 70%;
+	height: 100px;
 	padding: 30px 10px;
-	overflow: hidden;
+	margin: 0 auto;
+	overflow:hidden;
+	white-space:nowrap;
 	text-overflow: ellipsis;
-	border-bottom: 1px solid white;
+	border-bottom: 1px dotted lightblue;
 }
 
 .blog-photo_large{
@@ -52,6 +45,11 @@ body{
 	margin-right: auto;
 }
 
+.blog_show {
+	width: 60%;
+	margin: 0 auto;
+}
+
 .blog_show h1 {
 	text-decoration: underline;
 }
@@ -62,12 +60,23 @@ body{
 .blog_show ul li a{
 	color: red;
 }
+.comments_list {
+	width: 100%;
+}
+
 .comments_list ul li {
 	list-style: none;
+	display: block;
 }
-.comments_add {
-	background-color: gray;
+.comments_list ul li {
+	padding: 2%;
+	border-bottom: 1px dotted lightblue;
 }
+.comments_add{
+	width: 90%;
+	display: inline-block;
+}
+
 .img-centered{
 	display:block; 
 	margin-left:auto; 
@@ -77,30 +86,11 @@ body{
 	width: 300px;
 }
 
-.Purple{
-	background-color: purple;
-	color: #fff;
-}
-
-.Purple a{
-	color: #fff;
-}
-
-.White{
-	background-color: white;
-	color: #000;
-}
-
-.White a{
-	color: #000;
-}
-
 .about-photos ul li{
 	list-style: none;
 	display: inline;
 	float: left;
 	margin: 1%;
-	border: 3px solid white;
 }
 
 .about-container{
@@ -111,8 +101,8 @@ body{
 
 .charity-images img{
 	width: 500px;
-	border: 3px solid purple;
 }
+
 
 article,aside,details,figcaption,figure,header,hgroup,main,menu,nav,section,summary{
  	display:block
@@ -174,8 +164,6 @@ img{
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
-	border-top: 10px solid purple;
-	border-bottom: 10px solid purple;
 }
 .PM img{
 	width: 50%;

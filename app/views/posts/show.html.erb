@@ -8,7 +8,7 @@
 		<h1><%= @post.title %></h1>
 
 		<p><%= @post.text %></p>
-
+		<hr>
 		<div class="comments_list">
 			<h2>Comments: </h2>
 			<ul>
@@ -28,13 +28,13 @@
 			<% if current_user.general?  %>
 				<h2>Add your comment:</h2>
 					<%= form_for([@post, @post.comments.build]) do |f| %>
-						<p><%= f.label :author_name %><p>
-						<p style="color:black"><%= f.text_field :author_name, :value => "#{current_user.email}" %></p>
+						<%= f.label :author_name %>
+						<%= f.text_field :author_name, :value => "#{current_user.email}" %>
 
-						<p><%= f.label :body %></p>
-						<p style="color:black"><%= f.text_area :body %></p>
+						<%= f.label :body %>
+						<%= f.text_area :body %>
 	 
-						<p style="color:black"><%= f.submit "Post comment" %></p>
+						<%= f.submit "Post comment" %>
 				<% end %>
 			<% end %>
 		</div>
@@ -42,13 +42,13 @@
 		<% if current_user.admin? %>
 			<h2>Add your comment:</h2>
 				<%= form_for([@post, @post.comments.build]) do |f| %>
-					<p><%= f.label :author_name %><p>
-					<p style="color:black"><%= f.text_field :author_name, :value => "#{current_user.email}" %></p>
+					<%= f.label :author_name %>
+					<%= f.text_field :author_name, :value => "#{current_user.email}" %>
 
-					<p><%= f.label :body %></p>
-					<p style="color:black"><%= f.text_area :body %></p>
+					<%= f.label :body %>
+					<%= f.text_area :body %>
 		
-					<p style="color:black"><%= f.submit "Post comment" %></p>
+					<%= f.submit "Post comment" %>
 				<% end %>
   	<% end %>
   </div>
