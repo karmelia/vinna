@@ -1,20 +1,22 @@
-<h1>Log In</h1>
+<div class="user_log_in">
+	<h1>Log In</h1>
 
-<% flash.each do |message_type, message| %>
-  <div class="alert alert-<%= message_type %>"><%= message %></div>
-<% end %>
+	<% flash.each do |message_type, message| %>
+	  <div class="alert alert-<%= message_type %>"><%= message %></div>
+	<% end %>
 
 
-<%= form_tag log_in_path do %>
-	<ul>
-		<li><%= label_tag :email %><br>
-		<%= text_field_tag :email %></li>
+	<%= form_tag log_in_path do %>
+		<ul>
+			<li><%= label_tag :email %><br>
+			<%= text_field_tag :email %></li>
 
-		<li><%= label_tag :password %><br>
-		<%= password_field_tag :password %></li>
+			<li><%= label_tag :password %><br>
+			<%= password_field_tag :password %></li>
 
-		<li><%= submit_tag "Log in" %></li>
-	</ul>
-<br>
-	<p>New user? <%= link_to "Sign up now!",  new_user_path %></p>
-<% end %>
+			<li><%= submit_tag "Log in" %></li>
+		</ul>
+	<br>
+		<p>New user? <%= link_to "Sign up now!",  new_user_path %></p>
+	<% end %>
+</div>

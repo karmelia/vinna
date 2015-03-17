@@ -103,6 +103,24 @@ body{
 	width: 500px;
 }
 
+.user_log_in{
+	width: 40%;
+	margin: 0 auto;
+	text-align: center;
+}
+.user_log_in h1{
+	text-align: center;
+}
+
+.user_log_in ul li{
+	list-style: none;
+	padding: 1% 0;
+	margin: 1% 0;
+}
+
+.upload_image{
+	margin: 0 auto;
+}
 
 article,aside,details,figcaption,figure,header,hgroup,main,menu,nav,section,summary{
  	display:block
