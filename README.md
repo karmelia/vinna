@@ -5,7 +5,7 @@ Vinna
 * Custom domain (vinna.us, https://help.github.com/articles/adding-a-cname-file-to-your-repository/)  
 * ~~Basic blog (with access controls so that only Anna can create/edit/delete)
 * ~~Ability for Anna to share stories from other blogs (articles)? http://guides.rubyonrails.org/getting_started.html - #6. Adding a second model~~
-* Comments? Do we want comments? 
+* ~~Comments~~
 * Tags? Search bar? 
 
 Add access levels:
@@ -16,6 +16,4 @@ user.password_confirmation = 'Test1234'
 user.access_level = 'admin'
 user.save #=> true
 
-Mail form: https://github.com/plataformatec/mail_form
 Contact us: https://github.com/JDutil/contact_us
-Rails contact form: http://everydayrails.com/2011/09/07/rails-contact-form.html
