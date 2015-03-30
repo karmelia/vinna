@@ -248,7 +248,6 @@
  	width:auto!important;
  	height:auto!important;
  	margin-left:145px!important;
- 	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif!important
  }
 .carbonad-text{
  	padding-top:0!important
@@ -978,7 +977,6 @@
  	margin-bottom:5px
  }
 .bs-customizer input[type=text]{
- 	font-family:Menlo,Monaco,Consolas,"Courier New",monospace;
  	background-color:#fafafa
  }
 .bs-customizer .help-block{
