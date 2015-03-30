@@ -16,6 +16,13 @@ body{
  		width: 100%;
  	}
 
+ .header_font{
+ 	font-family: 'Josefin Sans', sans-serif;
+ }
+
+.curly_font {
+	font-family: 'Marck Script', cursive;
+}
 
 .blog-posts ul{
 	list-style: none;

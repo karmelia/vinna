@@ -1,16 +1,16 @@
-<main id="content" role="main" style="background-color: purple;">
+<main id="content" role="main">
   <%= image_tag("vinna_banner.jpg", :alt => "vinna logo banner", :class => "banner") %>
 </main>
 
 <div class="bs-docs-featurette">
   <div class="container">
-  <h1 class="bs-docs-featurette-title">Welcome to Vinna!</h1>
-  <h2>We create merit badges to commemorate your awesome adventures in parenting.</h2>
-    <p>Perfect for ironing on diaper bags or baby carriers, these patches are a great way to mark your milestones.</p>
+  <h1 class="bs-docs-featurette-title curly_font">Welcome to Vinna!</h1>
+  <h2 class="header_font">We create merit badges to commemorate your awesome adventures in parenting.</h2>
+    <p class="header_font">Perfect for ironing on diaper bags or baby carriers, these patches are a great way to mark your milestones.</p>
 
     <hr>
 
-    <div style="width: 100%; display:inline-block; text-overflow: clip;">
+    <div style="width: 100%; display:inline-block; text-overflow: clip;" class="header_font">
 
       <div id="about" class="col-sm-4">
         <a href="/about"><%= image_tag("Santos.jpg", :alt => "The Santos Family", :class => "img-responsive img-centered sm-photos") %></a>
@@ -26,10 +26,13 @@
   </div>
 </div>
 
-<hr>
 <!-- THIS IS THE BLOG POST SECTION -->
 
 <%#= render 'blog' %>
+
+<main>
+  <%= image_tag("badges_banner.jpg", :alt => "photos of merit badges", :class => "banner") %>
+</main>
 
 <!-- THIS IS THE PLACE TO POST EXTERNAL ARTICLES, PRESS, ETC -->
 
