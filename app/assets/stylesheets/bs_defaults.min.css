@@ -4,9 +4,9 @@
  * Licensed under the Creative Commons Attribution 3.0 Unported License. For
  * details, see http://creativecommons.org/licenses/by/3.0/.
  */
- body{
+/* body{
  	position:relative
- }
+ }*/
 .table code{
  	font-size:13px;
  	font-weight:400
@@ -89,12 +89,9 @@
  }
 .bs-docs-footer{
 	margin-top: 1%;
-	margin-bottom: 1%;
  	text-align:center;
- 	border-top: 1px solid #ccc;
  	color: black;
  	background-color: white;
- 	 
  }
 .bs-docs-footer-links{
  	padding-left:0;
