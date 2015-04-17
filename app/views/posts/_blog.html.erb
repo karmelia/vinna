@@ -1,8 +1,8 @@
 <div class="bs-docs-featurette">
   <div class="container">
-     <h2 class="bs-docs-featurette-title">What's new?</h2>
+     <h2 class="bs-docs-featurette-title curly_font">What's new?</h2>
     <div class="row bs-docs-featured-sites">
-      <div class="blog-posts">
+      <div class="blog-posts header_font">
         	<% @posts.each do |post| %>
         		<ul>
         			<li><em><strong><%= link_to (post.title), post_path(post) %></strong></em><br>
