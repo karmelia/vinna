@@ -1,11 +1,11 @@
 <div class="bs-docs-featurette">
   <div class="container">
-     <h2 class="bs-docs-featurette-title curly_font">What's new?</h2>
+     <h1 class="bs-docs-featurette-title curly_font">What's new?</h1>
     <div class="row bs-docs-featured-sites">
       <div class="blog-posts header_font">
         	<% @posts.each do |post| %>
         		<ul>
-        			<li><em><strong><%= link_to (post.title), post_path(post) %></strong></em><br>
+        			<li><em><h3><%= link_to (post.title), post_path(post) %></h3></em><br>
                <%= post.text %></li>
         		</ul>
         	<% end %>
