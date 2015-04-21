@@ -5,7 +5,6 @@ development:
   timeout: 5000
   user: postgres
   password:
-test:
   adapter: postgresql
   database: db_test
   pool: 5
