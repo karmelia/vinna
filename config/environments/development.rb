@@ -36,6 +36,16 @@ Rails.application.configure do
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
 
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => ENV['vinnablogphotos'],
+      :access_key_id => ENV['AKIAIPNGFTISDQCGACPA'],
+      :secret_access_key => ENV['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']
+    }
+  }
+
+
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 end
