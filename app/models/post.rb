@@ -13,9 +13,9 @@ class Post < ActiveRecord::Base
 	validates :text, presence: true,
 										length: { minimum: 2 }
 	
-	validates_attachment_presence :image
-	validates_attachment_size :image, :less_than => 5.megabytes
-	validates_attachment_content_type :image, :content_type => ['image/jpeg', 'image/png']
+	# validates_attachment_presence :image
+	# validates_attachment_size :image, :less_than => 5.megabytes
+	# validates_attachment_content_type :image, :content_type => ['image/jpeg', 'image/png']
 
 
 end

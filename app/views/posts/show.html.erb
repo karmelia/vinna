@@ -13,14 +13,14 @@
     
 		<h1><%= @post.title %></h1>
 
-		<p><%= @post.text %></p>
+		<p><%= @post.text.html_safe %></p>
 		<hr>
 		<div class="comments_list">
 			<h2>Comments: </h2>
 			<ul>
 				<% @post.comments.each do |comment| %>
 					<li><em><strong><%= comment.author_name %></strong></em> says: 
-					"<%= comment.body %>"
+					"<%= comment.body.html_safe %>"
 					<% if !current_user.nil? %>
 						<% if current_user.admin? %>
 							<%= link_to "Delete this comment", [comment.post, comment], 
