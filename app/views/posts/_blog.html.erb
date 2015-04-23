@@ -6,7 +6,7 @@
         	<% @posts.each do |post| %>
         		<ul>
         			<li><em><strong><h3><%= link_to (post.title), post_path(post) %></h3></strong></em><br>
-               <%= post.text %></li>
+               <%= post.text.html_safe %></li>
         		</ul>
         	<% end %>
       </div>
