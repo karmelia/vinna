@@ -1,1 +1,8 @@
 config/heroku_env.rb
+
+Add access levels:
+user = User.find(9)
+user.password = 'Test1234'
+user.password_confirmation = 'Test1234'
+user.access_level = 'admin'
+user.save #=> true
