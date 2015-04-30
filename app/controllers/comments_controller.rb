@@ -1,6 +1,6 @@
 class CommentsController < ApplicationController
-	before_action :logged_in_user, only: [:create]
-	before_action :admin_user, only: [:create, :destroy]
+	before_action :logged_in_user, only: [:new, :create]
+	before_action :admin_user, only: [:destroy]
 	
 	def current_user
 		@current_user ||= User.find(session[:user_id]) if session[:user_id]
@@ -24,26 +24,22 @@ class CommentsController < ApplicationController
 		params.require(:comment).permit(:author_name, :body)
 	end
 
-	def logged_in?
-	  !current_user.nil?
-	end
-
 	def are_you_an_admin?
 		if !current_user.nil?
-			!current_user.admin?
+			current_user.admin?
 		end
 	end
 
 	def logged_in_user
-	  unless logged_in?
-	    flash[:error] = "You are not logged in."
+	  if current_user.nil?
+	    flash[:error] = "You must be logged in to create a comment."
 	    redirect_to log_in_url
 	  end
 	end
 
 	def admin_user
 	  unless are_you_an_admin?
-	    flash[:error] = "You are not logged in as an admin."
+	    flash[:error] = "You must be logged in as an admin to do that."
 	    redirect_to log_in_url
 	  end
 	end
