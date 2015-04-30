@@ -8,9 +8,20 @@ class ApplicationController < ActionController::Base
 	  !current_user.nil?
 	end
 
+	def are_you_an_admin?
+		!current_user.admin?
+	end
+
 	def logged_in_user
 	  unless logged_in?
-	    flash[:danger] = "Please log in."
+	    flash[:error] = "You are not logged in."
+	    redirect_to log_in_url
+	  end
+	end
+
+	def admin_user
+	  unless are_you_an_admin?
+	    flash[:error] = "You are not logged in as an admin."
 	    redirect_to log_in_url
 	  end
 	end

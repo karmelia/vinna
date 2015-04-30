@@ -1,6 +1,4 @@
 class UsersController < ApplicationController
-	before_action :logged_in_user, only: [:edit, :update]
-
 	def new
 	end
 
@@ -8,9 +6,9 @@ class UsersController < ApplicationController
 		@user = User.new(user_params)
 		if @user.save
 			flash[:notice] = "Success!"
-			redirect_to root_path
+			redirect_to log_in_path
 		else
-			flash[:alert] = "There was a problem creating your account. Please try again."
+			flash[:error] = @user.errors.full_messages
 			redirect_to :back
 		end
 	end
@@ -38,7 +36,7 @@ class UsersController < ApplicationController
 
   def logged_in_user
     unless logged_in?
-      flash[:danger] = "Please log in."
+      flash[:error] = "You are not logged in."
       redirect_to log_in_url
     end
   end
