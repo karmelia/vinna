@@ -1,6 +1,6 @@
 class CommentsController < ApplicationController
-	before_action :logged_in_user, only: [:edit, :update]
-	before_action :admin_user, only: [:new, :create, :edit, :update, :destroy]
+	before_action :logged_in_user, only: [:create]
+	before_action :admin_user, only: [:create, :destroy]
 	
 	def current_user
 		@current_user ||= User.find(session[:user_id]) if session[:user_id]
