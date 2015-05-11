@@ -7,7 +7,10 @@ gem 'pg'
 gem 'bcrypt-ruby', '~> 3.1.5', require: 'bcrypt'
 
 gem "paperclip"
+gem "fog"
 gem 'aws-sdk', '< 2.0'
+
+gem 'ckeditor'
 
 gem "rails_12factor"
 gem 'capybara'
