@@ -1,3 +1,5 @@
+<H3>Hi Anna! Feel free to play with some of the fonts and stylings using this editor, but please don't try to add images to the blogs posts just yet. I'm still working on that! :) </H3>
+
 <%= form_for @post, html: { multipart: true } do |f| %>
  
   <% if @post.errors.any? %>
@@ -14,6 +16,7 @@
     </div>
   <% end %>
 
+
   <p class="upload_image">
   <%= f.label :image %>
   <%= f.file_field :image, :style => "margin: 0 auto" %>
@@ -23,11 +26,13 @@
     <%= f.label :title %><br>
     <%= f.text_field :title, :size => "50x1" %>
   </p>
+
+  <p><%= f.cktext_area :text, :ckeditor => {:toolbar => 'mini'} %></p>
  
-  <p>
-    <%= f.label :text %><br>
-    <%= f.text_area :text, :size => "100x10" %>
-  </p>
+<!--   <p>
+    <%#= f.label :text %><br>
+    <%#= f.text_area :text, :size => "100x10" %>
+  </p> -->
  
   <p>
     <%= f.submit %>
