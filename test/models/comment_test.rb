@@ -1,13 +1,12 @@
-require "test_helper"
+require File.expand_path("../../test_helper", __FILE__)
 
-class CommentTest < ActiveSupport::TestCase
+class CommentTest < Minitest::Test
+	def valid_params
+		{author_name: "Testy_McTester@email.com", body: "Hello I am a testing comment dur dur dur."}
+	end
 
-  def comment
-    @comment ||= Comment.new
-  end
-
-  def test_valid
-    assert comment.valid?
-  end
-
+	def test_with_valid_params
+		comment = Comment.new(valid_params)
+		assert comment.valid?, "Can't create with valid params: #{comment.errors.messages}"
+	end
 end
