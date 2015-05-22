@@ -1,6 +1,6 @@
 require File.expand_path("../../test_helper", __FILE__)
 
-class CommentTest < Minitest::Test
+class CommentTest < ActiveSupport::TestCase
 	def valid_params
 		{author_name: "Testy_McTester@email.com", body: "Hello I am a testing comment dur dur dur."}
 	end

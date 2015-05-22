@@ -1,6 +1,6 @@
 require File.expand_path("../../test_helper", __FILE__)
 
-class UserTest < Minitest::Test
+class UserTest < ActiveSupport::TestCase
 
 	def valid_params
 		{email: "test@test.com", password: "password1"}

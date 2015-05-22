@@ -1,6 +1,6 @@
 require File.expand_path("../../test_helper", __FILE__)
 
-class Post_Test < Minitest::Test
+class Post_Test < ActiveSupport::TestCase
 
   def valid_params
     {title: "Test Title", text: "Lorem ipsum dolor est blah blah blah blah."}

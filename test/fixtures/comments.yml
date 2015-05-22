@@ -4,9 +4,7 @@
 one:
   author_name: MyString
   body: MyText
-  category: post
 #
 two:
   author_name: MyString
   body: MyText
-  category: post
