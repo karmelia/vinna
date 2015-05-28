@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap
+//= require summernote
+//= require_self
 //= require_tree .
-//= require_tree ./ckeditor
-//= require ckeditor/init

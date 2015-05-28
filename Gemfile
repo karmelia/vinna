@@ -12,7 +12,9 @@ gem "paperclip"
 gem "fog"
 gem 'aws-sdk', '< 2.0'
 
-gem 'ckeditor'
+gem 'summernote-rails'
+gem 'font-awesome-rails'
+gem 'bootstrap-sass'     
 
 gem "rails_12factor"
 gem 'capybara'
