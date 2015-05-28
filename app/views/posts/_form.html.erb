@@ -1,5 +1,3 @@
-<H3>Hi Anna! Feel free to play with some of the fonts and stylings using this editor, but please don't try to add images to the blogs posts just yet. I'm still working on that! :) </H3>
-
 <%= form_for @post, html: { multipart: true } do |f| %>
  
   <% if @post.errors.any? %>
@@ -27,7 +25,9 @@
     <%= f.text_field :title, :size => "50x1" %>
   </p>
 
-  <p><%= f.cktext_area :text, :ckeditor => {:toolbar => 'mini'} %></p>
+  <p><%= f.text_area :content, :class => 'ckeditor' %></p>
+  
+  <!-- <p><%#= f.cktext_area :text, :ckeditor => {:toolbar => 'mini'} %></p> -->
  
 <!--   <p>
     <%#= f.label :text %><br>

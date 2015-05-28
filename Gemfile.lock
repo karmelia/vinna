@@ -76,6 +76,8 @@ GEM
     ckeditor (4.1.1)
       cocaine
       orm_adapter (~> 0.5.0)
+    ckeditor_rails (4.4.7)
+      railties (>= 3.0)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.7)
@@ -355,6 +357,7 @@ DEPENDENCIES
   capistrano-rails
   capybara
   ckeditor
+  ckeditor_rails
   coffee-rails (~> 4.1.0)
   contact_us (~> 0.5.1)
   database_cleaner
