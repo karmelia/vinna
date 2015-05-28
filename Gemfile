@@ -13,6 +13,7 @@ gem "fog"
 gem 'aws-sdk', '< 2.0'
 
 gem 'ckeditor'
+gem 'turbo-sprockets-rails3'
 
 gem "rails_12factor"
 gem 'capybara'
