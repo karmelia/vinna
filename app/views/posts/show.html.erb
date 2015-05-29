@@ -38,11 +38,17 @@
 			<% if current_user.general?  %>
 				<h2>Add your comment:</h2>
 					<%= form_for([@post, @post.comments.build]) do |f| %>
-						<%= f.label :author_name %>
-						<%= f.text_field :author_name, :value => "#{current_user.email}" %>
-
-						<%= f.label :body %>
-						<%= f.text_area :body %>
+					
+					<script type="text/javascript">
+					  $(document).ready(function() {
+					    $('#summernote').summernote();
+					  });
+					</script>
+					
+					<p><%= f.text_area :body, id: "summernote" %></p>
+					
+					<p><%= f.label :author_name %><br>
+					<%= f.text_field :author_name, :value => "#{current_user.email}" %></p>
 	 
 						<%= f.submit "Post comment" %>
 				<% end %>
@@ -52,12 +58,18 @@
 		<% if current_user.admin? %>
 			<h2>Add your comment:</h2>
 				<%= form_for([@post, @post.comments.build]) do |f| %>
-					<%= f.label :author_name %>
-					<%= f.text_field :author_name, :value => "#{current_user.email}" %>
 
-					<%= f.label :body %>
-					<%= f.text_area :body %>
+					<script type="text/javascript">
+					  $(document).ready(function() {
+					    $('#summernote').summernote();
+					  });
+					</script>
+					
+					<p><%= f.text_area :body, id: "summernote" %></p>
 		
+					<p><%= f.label :author_name %><br>
+					<%= f.text_field :author_name, :value => "#{current_user.email}" %></p>
+
 					<%= f.submit "Post comment" %>
 				<% end %>
   	<% end %>
