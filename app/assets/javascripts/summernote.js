@@ -8,6 +8,7 @@
  *
  * Date: 2015-05-17T07:01Z
  */
+ 
 (function (factory) {
   /* global define */
   if (typeof define === 'function' && define.amd) {
