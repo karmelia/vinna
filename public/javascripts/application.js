@@ -15,5 +15,4 @@
 //= require turbolinks
 //= require bootstrap
 //= require summernote
-//= require_self
 //= require_tree .
