@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en", style="font-family:sans-serif; background-color: #fff; width: 100%;">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +10,7 @@
 
   <title>Vinna: work + win</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -24,11 +25,11 @@
   <![endif] -->
 
 </head>
-<body>
+<body class="header_font">
 <!-- Top Nav Bar -->
   <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
     <div class="container">
-      <div class="navbar-header">
+      <div class="navbar-header header_font">
       <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
@@ -66,7 +67,7 @@
 
   <!-- Footer -->
   <hr>
-  <footer class="bs-docs-footer header_font" role="contentinfo">
+  <footer class="bs-docs-footer header_font center" role="contentinfo">
     Copyright 2014 - 2015<br>
     <a href="https://www.etsy.com/shop/VinnaLife" target="_blank"><%= image_tag("etsy_footer.png", :alt => "etsy seller", :class => "footer_image img-responsive") %></a>
   </footer>
