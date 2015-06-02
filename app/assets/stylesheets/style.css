@@ -4,21 +4,13 @@ html{
  	-ms-text-size-adjust:100%;
  	background-color: #fff;
  	width: 100%;
- 	color: black;
  }
 body{
  		margin:0;
  		background-color: #fff;
  		width: 100%;
- 		color: black;
  	}
-.banner{
-	width: 100%;
-}
 
-.center {
-	margin: 0 auto;
-}
 .header_font{
 	font-family: 'Open Sans Condensed', sans-serif;
 }
