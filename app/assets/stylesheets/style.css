@@ -1,0 +1,131 @@
+html{
+ 	font-family:sans-serif;
+ 	-webkit-text-size-adjust:100%;
+ 	-ms-text-size-adjust:100%;
+ 	background-color: #fff;
+ 	width: 100%;
+ }
+body{
+ 		margin:0;
+ 		background-color: #fff;
+ 		width: 100%;
+ 	}
+
+.header_font{
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.curly_font {
+	font-family: 'Marck Script', cursive;
+}
+
+.blog-posts ul{
+	list-style: none;
+	text-align: left;
+}
+
+.blog-posts ul li {
+	width: 70%;
+	height: 150px;
+	padding: 30px 10px;
+	margin: 0 auto;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+	border-bottom: 1px dotted lightblue;
+}
+
+.blog-photo_large{
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.blog-photo_med{
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.blog_show {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.blog_show h1 {
+	text-decoration: underline;
+}
+.blog_show h2 {
+	text-decoration: underline;
+}
+
+.blog_show ul li a{
+	color: red;
+}
+.comments_list {
+	width: 100%;
+}
+
+.comments_list ul li {
+	list-style: none;
+	display: block;
+}
+.comments_list ul li {
+	padding: 2%;
+	border-bottom: 1px dotted lightblue;
+}
+.comments_add{
+	width: 90%;
+	display: inline-block;
+}
+
+.img-centered{
+	display:block; 
+	margin-left:auto; 
+	margin-right:auto;
+}
+.sm-photos{
+	width: 300px;
+}
+
+.about-photos ul li{
+	list-style: none;
+	display: inline;
+	float: left;
+	margin: 1%;
+}
+
+.about-container{
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0 20%;
+}
+
+.charity-images img{
+	width: 500px;
+}
+
+.user_log_in{
+	width: 40%;
+	margin: 0 auto;
+	text-align: center;
+}
+.user_log_in h1{
+	text-align: center;
+}
+
+.user_log_in ul li{
+	list-style: none;
+	padding: 1% 0;
+	margin: 1% 0;
+}
+
+.upload_image{
+	margin: 4% auto;
+
+}
+
+.footer_image{
+	margin-left: auto;
+	margin-right: auto;
+}

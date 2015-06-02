@@ -41,7 +41,13 @@
 					
 					<script type="text/javascript">
 					  $(document).ready(function() {
-					    $('#summernote').summernote();
+					    $('#summernote').summernote({
+					      height: 300,
+					      toolbar: [
+					        ['style', ['bold', 'italic', 'underline']],
+					        ['para', ['ul', 'ol']],
+					      ]
+					    });
 					  });
 					</script>
 					
@@ -59,11 +65,17 @@
 			<h2>Add your comment:</h2>
 				<%= form_for([@post, @post.comments.build]) do |f| %>
 
-					<script type="text/javascript">
-					  $(document).ready(function() {
-					    $('#summernote').summernote();
-					  });
-					</script>
+				<script type="text/javascript">
+				  $(document).ready(function() {
+				    $('#summernote').summernote({
+				      height: 300,
+				      toolbar: [
+				        ['style', ['bold', 'italic', 'underline']],
+				        ['para', ['ul', 'ol']],
+				      ]
+				    });
+				  });
+				</script>
 					
 					<p><%= f.text_area :body, id: "summernote" %></p>
 		

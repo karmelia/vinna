@@ -27,7 +27,14 @@
 
   <script type="text/javascript">
     $(document).ready(function() {
-      $('#summernote').summernote();
+      $('#summernote').summernote({
+        height: 300,
+        toolbar: [
+          ['style', ['bold', 'italic', 'underline']],
+          ['fontsize', ['fontsize']],
+          ['para', ['ul', 'ol']],
+        ]
+      });
     });
   </script>
  

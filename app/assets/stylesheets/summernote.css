@@ -1,15 +1,17 @@
 .note-editor{
 	position:relative;
-	border:1px solid #a9a9a9}
+	border:1px solid #a9a9a9;
+}
 .note-editor .note-dropzone{
 	position:absolute;
 	z-index:100;
-	display:none;
+/*	display:none;*/
 	color:#87cefa;
 	background-color:white;
 	border:2px dashed #87cefa;
 	opacity:.95;
-	pointer-event:none}
+	pointer-event:none
+}
 .note-editor .note-dropzone .note-dropzone-message{
 	display:table-cell;
 	font-size:28px;
