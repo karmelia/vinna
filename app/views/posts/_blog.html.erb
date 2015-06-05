@@ -3,7 +3,7 @@
      <h1 class="bs-docs-featurette-title curly_font">What's new?</h1>
     <div class="row bs-docs-featured-sites">
       <div class="blog-posts header_font">
-        	<% @posts.each do |post| %>
+        	<% @posts.reverse.each do |post| %>
         		<ul>
         			<li><em><strong><h3><%= link_to (post.title), post_path(post) %></h3></strong></em><br>
                <%= post.text.html_safe %></li>
