@@ -1,35 +1,31 @@
-require "test_helper"
+require File.expand_path("../../test_helper", __FILE__)
 
 class UserTest < ActiveSupport::TestCase
 
-  test "should not save user without an email or password" do 
-  	user = User.new
-  	assert_not user.save
-  	user.email = "test@test.com"
-  	assert_not user.save
-  	user.password = "password"
- 		assert user.save
- 	end
-
- 	test 'should not save user with invalid email' do 
-	 	user = User.new
-	 	assert_not user.save
-	 	user.password = "password"
-	 	assert_not user.save
-	 	user.email = "test"
-	 	assert_not user.save
-	 	user.email = "test@test.com"
-		assert user.save
+	def valid_params
+		{email: "test@test.com", password: "password1"}
 	end
 
- 	test 'should not save user with invalid password' do 
-	 	user = User.new
-	 	assert_not user.save
-	 	user.email = "test@test.com"
-	 	assert_not user.save
-	 	user.password = ""
-	 	assert_not user.save
-	 	user.password = "password"
-		assert user.save
+	def test_with_valid_parmas
+		user = User.new(valid_params)
+		assert user.valid?, "Can't create with valid params: #{user.errors.messages}"
+	end
+
+	def test_with_invalid_email
+		params = valid_params.clone
+		params.delete :email
+		user = User.new(params)
+
+		refute user.valid?, "Can't be valid without email"
+		assert user.errors[:email], "Missing error without email."
+	end
+
+	def test_with_invalid_password
+		params = valid_params.clone
+		params.delete :password
+		user = User.new(params)
+
+		refute user.valid?, "Can't be valid without password"
+		assert user.errors[:password], "Missing error without password."
 	end
 end
