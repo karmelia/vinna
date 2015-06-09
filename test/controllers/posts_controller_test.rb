@@ -1,21 +1,51 @@
-require 'test_helper'
+require File.expand_path("../../test_helper", __FILE__)
 
 class PostsControllerTest < ActionController::TestCase
+  def setup
+    @user = User.new(email: "test@test.com", password: "password1", access_level: 1) 
+    @post = Post.new(title: "Testing", text: "testing testing testing")
+  end
+
+  def teardown
+    @post.destroy
+  end
+
   test "should get index" do
     get :index
     assert_response :success
-    assert_not_nil assigns(:posts)
   end
 
-  test "new should render correct layout" do 
+  test "should get new" do 
   	get :new
-  	assert_template layout: "layouts/application", partial: "_form"
+  	assert_response :success
   end
 
-  test "should create a new post" do
-    assert_difference("Post.count") do 
-    	post :create, post: { title: "Test title", text: "Some text for the test blog post" }
+  test "should create post" do
+    assert_difference('Post.count') do 
+    	Post.new(title: "Hello", text: 'Hi There')
     end
     assert_redirected_to post_path(assigns(:post))
+  end
+
+  test "should show post" do
+    get :show, id: @post
+    assert_response :success
+  end
+
+  test "should get edit" do 
+    get :edit, id: @post
+    assert_response :success
+  end
+
+  test "should update post" do 
+    patch :update, id: @post, post: {title: "Changed title", text: "Changed text"}
+    assert_redirected_to post_path(assigns(:post))
+  end
+
+  test "should destroy post" do
+    assert_difference('Post.count', -1) do 
+      delete :destroy, id: @post
+    end
+    assert_redirected_to posts_path
   end
 end

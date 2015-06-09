@@ -2,11 +2,9 @@
 # http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  commenter: MyString
+  author_name: MyString
   body: MyText
-  post: 
-
+#
 two:
-  commenter: MyString
+  author_name: MyString
   body: MyText
-  post: 
