@@ -3,11 +3,11 @@ require File.expand_path("../../test_helper", __FILE__)
 feature "User can sign up for an account" do 
 	scenario "new user signs up" do
 		visit root_path
-		click_on 'Sign Up'
+		click_on('Sign Up')
 		fill_in 'Email', with: 'erintesting@gmail.com'
 		fill_in 'Password', with: 'Password1'
 		fill_in 'Password confirmation', with: 'Password1'
-		click_on 'Sign up'
+		click_on('Sign up')
 
 		page.has_css?('.banner')
 	end
