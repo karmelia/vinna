@@ -64,5 +64,6 @@ group :development, :test do
 
   gem "minitest-rails-capybara"
   gem 'selenium-webdriver'
+  gem 'capybara'
 end
 
