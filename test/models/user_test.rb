@@ -28,4 +28,21 @@ class UserTest < ActiveSupport::TestCase
 		refute user.valid?, "Can't be valid without password"
 		assert user.errors[:password], "Missing error without password."
 	end
+
+	def test_with_duplicate_email
+		params = valid_params.clone
+		user1 = User.new(params)
+		user = User.new(params)
+
+		refute user.valid?, "Can't be valid with dupliate email"
+		assert user.errors[:email], "Missing error with duplicate email."
+	end
+
+	def test_with_wrong_formatted_email
+		params = {email: "test", password: "password1"}
+		user = User.new(params)
+
+		refute user.valid?, "Can't be valid with wrong format email"
+		assert user.errors[:email], "Missing error with wrong format email."
+	end
 end

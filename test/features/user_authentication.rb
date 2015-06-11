@@ -9,7 +9,7 @@ feature "User can sign up for an account" do
 		fill_in 'Password confirmation', with: 'Password1'
 		click_on('Sign up')
 
-		page.has_css?('.banner')
+		expect(page).to have_css('.banner')
 	end
 end
 
@@ -23,7 +23,7 @@ feature "Existing users can log in" do
 		fill_in 'Password', with: users(:admin).password
 		click_on 'Log in'
 
-		page.has_content?('Add new blog post')
+		expect(page).to have_text('Add new blog post')
 	end
 
 	scenario "visitor is general user" do 
@@ -34,6 +34,6 @@ feature "Existing users can log in" do
 		fill_in 'Password', with: users(:user).password
 		click_on 'Log in'
 
-		page.has_content?('Hello, user@user.com')
+		expect(page).to have_text('Hello, user@user.com')
 	end
 end

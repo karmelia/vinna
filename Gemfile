@@ -17,11 +17,6 @@ gem 'font-awesome-rails'
 gem 'bootstrap-sass'     
 
 gem "rails_12factor"
-gem 'capybara'
-gem 'database_cleaner'
-gem 'faker'
-gem "minitest-rails"
-
 gem 'contact_us', '~> 0.5.1'
 gem 'simple_form'
 
@@ -53,6 +48,11 @@ gem 'unicorn'
 gem 'capistrano-rails', group: :development
 
 group :development, :test do
+
+	gem 'rspec-rails', '~> 3.0'
+	gem 'database_cleaner'
+	gem 'faker'
+	gem "minitest-rails"
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
