@@ -1,7 +1,7 @@
 <div class="Purple blog_show header_font">
 	<div class="bs-docs-featurette">
 
- <p class="blog-photo_large"><%=image_tag @post.image %></p>
+ <p class="blog-photo_large"><%=image_tag @post.image.url(:large) %></p>
 	
 	<% if !current_user.nil? %>
 		<% if current_user.admin? %>
