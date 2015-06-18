@@ -16,7 +16,7 @@ class SessionsController < ApplicationController
 
 	def destroy
 		session[:user_id] = nil
-		flash[:error] = "There was a problem logging you out. Please contact vinnalife@gmail.com for customer support."
+		flash[:error] = @user.errors.full_messages
 		redirect_to root_path
 	end
 
