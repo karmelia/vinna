@@ -141,3 +141,32 @@ body{
 	float: right;
 	vertical-align: top;
 }
+
+/*iPhone 5s min and 6Plus max styles*/
+@media only screen and (min-device-width : 300px) and (max-device-width : 736px) { 
+	.blog-posts ul li{
+		width: 90%;
+		margin: 0 auto;
+		padding: 10px 10px;
+	}
+	.blog_show {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.blog-photo_large{
+		width: 200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.about-container{
+		margin-right: auto;
+		margin-left: auto;
+		padding: 0 5%;
+	}
+	.about-photos ul li{
+		list-style: none;
+		display: inline;
+		float: left;
+		margin: 1%;
+	}
+}
