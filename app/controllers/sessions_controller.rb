@@ -6,11 +6,10 @@ class SessionsController < ApplicationController
 	def create
 		@user = User.authenticate(params[:email], params[:password])
 		if @user
-			flash[:notice] = "You are logged in"
 			session[:user_id] = @user.id
-			redirect_to root_path
+      redirect_to root_path
 		else
-			flash[:error] = "Invalid email/password combination."
+			flash[:error] = @user.errors.full_messages
 			redirect_to log_in_path
 		end
 	end
