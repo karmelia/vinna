@@ -1,8 +1,8 @@
 <div class="Purple blog_show header_font">
 	<div class="bs-docs-featurette">
+ 	
+ 	<p class="img-responsive center-block"><%=image_tag @post.image.url, :class => "blog-photo_large" %></p>
 
- <p class="blog-photo_large img-responsive"><%=image_tag @post.image.url(:large) %></p>
-	
 	<% if !current_user.nil? %>
 		<% if current_user.admin? %>
 			<%= link_to 'Edit Post', edit_post_path(@post) %> | <%= link_to 'Delete Post', post_path(@post),
