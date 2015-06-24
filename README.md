@@ -10,6 +10,6 @@ MVP:
 
 Next Iteration:
 * ~~WYSIWYG editor for Anna to create new blog posts~~
-* Images on blog posts
+* ~~Images on blog posts~~
 * Commenter/user avatars?
 * tags? search? 
