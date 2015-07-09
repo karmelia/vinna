@@ -6,3 +6,9 @@ user.password = 'Test1234'
 user.password_confirmation = 'Test1234'
 user.access_level = 'admin'
 user.save #=> true
+test:
+  access_key_id: AKIAJDWWG5F6T22MPELA
+  secret_access_key: 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
+development:
+  access_key_id: AKIAJDWWG5F6T22MPELA
+  secret_access_key: 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
