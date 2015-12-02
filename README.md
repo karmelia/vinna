@@ -13,3 +13,5 @@ Next Iteration:
 * ~~Images on blog posts~~
 * Commenter/user avatars?
 * tags? search? 
+
+Dropping this project in favor of a squarespace website with built in shopping cart.
